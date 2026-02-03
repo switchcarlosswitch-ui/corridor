@@ -30,7 +30,9 @@
         .form-container { max-width: 600px; margin: 0 auto; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
         .company-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; display: inline-block; margin-bottom: 20px; }
         .form-title { font-size: 32px; font-weight: 800; color: #1a1a2e; margin-bottom: 15px; }
-        .form-subtitle { font-size: 16px; color: #666; margin-bottom: 35px; line-height: 1.6; }
+        .form-subtitle { font-size: 16px; color: #666; margin-bottom: 25px; line-height: 1.6; }
+        .urgency-note { background: #fef3c7; color: #92400e; padding: 20px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #f59e0b; font-size: 15px; line-height: 1.6; }
+        .urgency-note strong { color: #78350f; display: block; margin-bottom: 8px; font-size: 16px; }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; font-size: 15px; }
         .form-group input, .form-group select { width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; font-family: inherit; transition: all 0.3s; }
@@ -51,11 +53,13 @@
             .form-container { padding: 35px 25px; }
             .form-title { font-size: 26px; }
             .form-subtitle { font-size: 15px; }
+            .urgency-note { padding: 15px; font-size: 14px; }
             .back-button { font-size: 13px; padding: 8px 16px; }
         }
         @media (max-width: 480px) {
             .form-container { padding: 30px 20px; }
             .form-title { font-size: 24px; }
+            .urgency-note { padding: 15px; font-size: 13px; }
         }
     </style>
 </head>
@@ -88,13 +92,22 @@
                     <span class="es-text hidden">Únase a la Lista de Espera</span>
                 </h1>
                 <p class="form-subtitle">
-                    <span class="en-text">Be the first to know when Anduril pre-IPO shares become available. We'll notify you as soon as this opportunity opens.</span>
-                    <span class="es-text hidden">Sea el primero en saber cuando las acciones pre-IPO de Anduril estén disponibles. Le notificaremos tan pronto como esta oportunidad se abra.</span>
+                    <span class="en-text">Get priority access to Anduril pre-IPO shares. Allocation process has begun.</span>
+                    <span class="es-text hidden">Obtenga acceso prioritario a acciones pre-IPO de Anduril. El proceso de asignación ha comenzado.</span>
                 </p>
 
+                <div class="urgency-note">
+                    <strong>
+                        <span class="en-text">⚡ First-Come, First-Served Basis</span>
+                        <span class="es-text hidden">⚡ Por Orden de Llegada</span>
+                    </strong>
+                    <span class="en-text">This is NOT a reservation. Shares are allocated on a first-come, first-served basis as they become available. The allocation process has already started. Join the waitlist now to secure your position in line.</span>
+                    <span class="es-text hidden">Esto NO es una reserva. Las acciones se asignan por orden de llegada a medida que estén disponibles. El proceso de asignación ya ha comenzado. Únase a la lista de espera ahora para asegurar su posición en la fila.</span>
+                </div>
+
                 <div class="success-message" id="successMessage">
-                    <span class="en-text">✅ <strong>You're on the list!</strong> We'll notify you when Anduril shares become available.</span>
-                    <span class="es-text hidden">✅ <strong>¡Está en la lista!</strong> Le notificaremos cuando las acciones de Anduril estén disponibles.</span>
+                    <span class="en-text">✅ <strong>You're on the list!</strong> We'll contact you as soon as Anduril shares become available. Remember: first-come, first-served.</span>
+                    <span class="es-text hidden">✅ <strong>¡Está en la lista!</strong> Le contactaremos tan pronto como las acciones de Anduril estén disponibles. Recuerde: por orden de llegada.</span>
                 </div>
 
                 <div class="error-message" id="errorMessage">
@@ -154,9 +167,17 @@
                         </label>
                     </div>
 
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="understand" name="understand_fcfs" value="yes" required>
+                        <label for="understand">
+                            <span class="en-text">I understand this is not a reservation and shares are allocated first-come, first-served <span class="required">*</span></span>
+                            <span class="es-text hidden">Entiendo que esto no es una reserva y las acciones se asignan por orden de llegada <span class="required">*</span></span>
+                        </label>
+                    </div>
+
                     <button type="submit" class="submit-button">
-                        <span class="en-text">Join Waitlist</span>
-                        <span class="es-text hidden">Unirse a Lista de Espera</span>
+                        <span class="en-text">Join Waitlist Now</span>
+                        <span class="es-text hidden">Unirse a Lista Ahora</span>
                     </button>
                 </form>
 
