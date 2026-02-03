@@ -8,6 +8,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/cdo-fuelix-app-pr-5c588b.appspot.com/o/users%2Fuser-AqzE1n8hCrrEpb7sIlfU%2Ffile-BowVXGF1MvmdSdAwu7Do?alt=media&token=c5130108-7182-41fc-8140-9e74ae296178">
     
+    <!-- Reader View Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
     <!-- SEO Meta Tags -->
     <meta name="title" content="Silicon Corridor Ventures - Pre-IPO Investment Platform">
     <meta name="description" content="Access exclusive pre-IPO opportunities in SpaceX, Stripe, and Anduril. Minimum $25K investment for accredited investors.">
@@ -149,6 +153,11 @@
             .process-step { flex-direction: column; padding: 20px; }
             .process-step-number { margin: 0 auto 15px; }
             .cta-logo { max-width: 350px; }
+            .opportunity-card { padding: 25px; }
+            .fee-box { padding: 25px; }
+            .fee-calculation { padding: 20px; }
+            .fee-row { font-size: 14px; flex-direction: column; gap: 5px; padding: 10px 0; }
+            .fee-row span:last-child { text-align: left; font-weight: 600; }
         }
         @media (max-width: 480px) {
             .hero h1 { font-size: 26px; }
@@ -176,271 +185,275 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1><span class="en-text">Exclusive Access to Tomorrow's Tech Giants</span><span class="es-text hidden">Acceso Exclusivo a los Gigantes Tecnológicos del Mañana</span></h1>
-            <p class="subtitle"><span class="en-text">Pre-IPO Investment Opportunities for Accredited Investors</span><span class="es-text hidden">Oportunidades de Inversión Pre-IPO para Inversionistas Acreditados</span></p>
-            <p><span class="en-text">Invest alongside institutional investors in late-stage technology companies before they go public. Access opportunities that were previously reserved for Silicon Valley insiders.</span><span class="es-text hidden">Invierta junto a inversionistas institucionales en compañías tecnológicas de etapa avanzada antes de que salgan a bolsa. Acceda a oportunidades que antes estaban reservadas para los insiders de Silicon Valley.</span></p>
-            <a href="contact-form-ready.html" class="cta-button"><span class="en-text">Get Started</span><span class="es-text hidden">Comenzar</span></a>
-        </div>
-    </section>
+    <main>
+        <article>
+            <section class="hero">
+                <div class="container">
+                    <h1><span class="en-text">Exclusive Access to Tomorrow's Tech Giants</span><span class="es-text hidden">Acceso Exclusivo a los Gigantes Tecnológicos del Mañana</span></h1>
+                    <p class="subtitle"><span class="en-text">Pre-IPO Investment Opportunities for Accredited Investors</span><span class="es-text hidden">Oportunidades de Inversión Pre-IPO para Inversionistas Acreditados</span></p>
+                    <p><span class="en-text">Invest alongside institutional investors in late-stage technology companies before they go public. Access opportunities that were previously reserved for Silicon Valley insiders.</span><span class="es-text hidden">Invierta junto a inversionistas institucionales en compañías tecnológicas de etapa avanzada antes de que salgan a bolsa. Acceda a oportunidades que antes estaban reservadas para los insiders de Silicon Valley.</span></p>
+                    <a href="contact-form-ready.html" class="cta-button"><span class="en-text">Get Started</span><span class="es-text hidden">Comenzar</span></a>
+                </div>
+            </section>
 
-    <section class="opportunities-available">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Current Opportunities</span><span class="es-text hidden">Oportunidades Actuales</span></h2>
-            <p class="section-subtitle"><span class="en-text">View availability status for our curated pre-IPO opportunities</span><span class="es-text hidden">Vea el estado de disponibilidad de nuestras oportunidades pre-IPO seleccionadas</span></p>
-            <div class="opportunities-grid">
-                <div class="opportunity-status-card soldout">
-                    <h3><a href="https://www.spacex.com" target="_blank" rel="noopener noreferrer">SpaceX</a></h3>
-                    <p><span class="en-text">Private space exploration and satellite company</span><span class="es-text hidden">Compañía privada de exploración espacial y satélites</span></p>
-                    <div class="status-badge soldout"><span class="en-text">Sold Out</span><span class="es-text hidden">Agotado</span></div>
-                </div>
-                <div class="opportunity-status-card waitlist">
-                    <h3><a href="https://stripe.com" target="_blank" rel="noopener noreferrer">Stripe</a></h3>
-                    <p><span class="en-text">Financial infrastructure and payments platform</span><span class="es-text hidden">Infraestructura financiera y plataforma de pagos</span></p>
-                    <a href="stripe-waitlist.html" class="status-badge waitlist"><span class="en-text">Join Waitlist</span><span class="es-text hidden">Unirse a Lista</span></a>
-                </div>
-                <div class="opportunity-status-card waitlist">
-                    <h3><a href="https://www.anduril.com" target="_blank" rel="noopener noreferrer">Anduril</a></h3>
-                    <p><span class="en-text">Defense technology and autonomous systems</span><span class="es-text hidden">Tecnología de defensa y sistemas autónomos</span></p>
-                    <a href="anduril-waitlist.html" class="status-badge waitlist"><span class="en-text">Join Waitlist</span><span class="es-text hidden">Unirse a Lista</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="selection-criteria">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Our Selection Process</span><span class="es-text hidden">Nuestro Proceso de Selección</span></h2>
-            <p class="section-subtitle"><span class="en-text">We focus exclusively on companies actively preparing for liquidity events</span><span class="es-text hidden">Nos enfocamos exclusivamente en compañías que se preparan activamente para eventos de liquidez</span></p>
-            <div class="criteria-box">
-                <h3><span class="en-text">Companies in Active IPO Preparation</span><span class="es-text hidden">Compañías en Preparación Activa para IPO</span></h3>
-                <p><span class="en-text">We carefully select late-stage technology companies that are actively in the process of preparing for an IPO or acquisition within a defined timeframe.</span><span class="es-text hidden">Seleccionamos cuidadosamente compañías tecnológicas de etapa avanzada que están activamente en el proceso de preparación para un IPO o adquisición dentro de un marco de tiempo definido.</span></p>
-                <div class="timeline-highlight"><span class="en-text">1-2 Year Horizon</span><span class="es-text hidden">Horizonte de 1-2 Años</span></div>
-                <p><span class="en-text">This focused approach means you're investing in companies with clear, near-term paths to liquidity—not speculative early-stage ventures. Every opportunity we present has credible momentum toward a public listing or strategic acquisition.</span><span class="es-text hidden">Este enfoque concentrado significa que está invirtiendo en compañías con caminos claros y cercanos hacia liquidez—no empresas especulativas de etapa temprana. Cada oportunidad que presentamos tiene impulso creíble hacia una cotización pública o adquisición estratégica.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="opportunity">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Why Pre-IPO Tech Investments?</span><span class="es-text hidden">¿Por Qué Inversiones Pre-IPO en Tecnología?</span></h2>
-            <p class="section-subtitle"><span class="en-text">The most significant wealth creation in technology happens before companies go public</span><span class="es-text hidden">La creación de riqueza más significativa en tecnología ocurre antes de que las compañías salgan a bolsa</span></p>
-            <div class="opportunity-grid">
-                <div class="opportunity-card">
-                    <div class="icon">📈</div>
-                    <h3><span class="en-text">Explosive Growth Potential</span><span class="es-text hidden">Potencial de Crecimiento Explosivo</span></h3>
-                    <p><span class="en-text">Late-stage private companies often experience 2-5x returns before and after IPO. By the time companies go public, much of the value creation has already occurred.</span><span class="es-text hidden">Las compañías privadas de etapa avanzada frecuentemente experimentan retornos de 2-5x antes y después del IPO. Para cuando las compañías salen a bolsa, gran parte de la creación de valor ya ha ocurrido.</span></p>
-                </div>
-                <div class="opportunity-card">
-                    <div class="icon">🎯</div>
-                    <h3><span class="en-text">Portfolio Diversification</span><span class="es-text hidden">Diversificación de Portafolio</span></h3>
-                    <p><span class="en-text">Access a new asset class that's uncorrelated with traditional markets. Pre-IPO investments provide exposure to innovation and high-growth sectors.</span><span class="es-text hidden">Acceda a una nueva clase de activo no correlacionada con mercados tradicionales. Las inversiones pre-IPO proporcionan exposición a innovación y sectores de alto crecimiento.</span></p>
-                </div>
-                <div class="opportunity-card">
-                    <div class="icon">⏰</div>
-                    <h3><span class="en-text">First-Mover Advantage</span><span class="es-text hidden">Ventaja del Primer Movimiento</span></h3>
-                    <p><span class="en-text">Invest before the public market hype. Get in at valuations that reflect private market dynamics, not public market speculation.</span><span class="es-text hidden">Invierta antes del hype del mercado público. Entre a valoraciones que reflejan dinámicas del mercado privado, no especulación del mercado público.</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="exclusivity">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Exclusive Access to Private Markets</span><span class="es-text hidden">Acceso Exclusivo a Mercados Privados</span></h2>
-            <p class="section-subtitle"><span class="en-text">Gain access to investment opportunities typically reserved for institutional investors and Silicon Valley insiders</span><span class="es-text hidden">Obtenga acceso a oportunidades de inversión típicamente reservadas para inversionistas institucionales e insiders de Silicon Valley</span></p>
-            <div class="exclusivity-content">
-                <div class="exclusivity-text">
-                    <h3><span class="en-text">Breaking Down Barriers</span><span class="es-text hidden">Rompiendo Barreras</span></h3>
-                    <p><span class="en-text">Historically, pre-IPO investments were exclusively available to:</span><span class="es-text hidden">Históricamente, las inversiones pre-IPO estaban disponibles exclusivamente para:</span></p>
-                    <ul>
-                        <li><span class="en-text">Silicon Valley venture capital firms</span><span class="es-text hidden">Firmas de capital de riesgo de Silicon Valley</span></li>
-                        <li><span class="en-text">Ultra-high-net-worth individuals with insider connections</span><span class="es-text hidden">Individuos de patrimonio ultra alto con conexiones internas</span></li>
-                        <li><span class="en-text">Institutional investors with Silicon Valley networks</span><span class="es-text hidden">Inversionistas institucionales con redes en Silicon Valley</span></li>
-                        <li><span class="en-text">Company insiders and early employees</span><span class="es-text hidden">Insiders de la compañía y empleados tempranos</span></li>
-                    </ul>
-                    <p style="margin-top: 30px; font-size: 18px; font-weight: 600;"><span class="en-text">Silicon Corridor Ventures changes this. We provide structured, transparent access to these exclusive opportunities for accredited investors worldwide.</span><span class="es-text hidden">Silicon Corridor Ventures cambia esto. Proporcionamos acceso estructurado y transparente a estas oportunidades exclusivas para inversionistas acreditados en todo el mundo.</span></p>
-                </div>
-                <div class="exclusivity-box">
-                    <h4><span class="en-text">Why This Matters</span><span class="es-text hidden">Por Qué Esto Importa</span></h4>
-                    <p><span class="en-text">By the time a company IPOs, early investors have often seen:</span><span class="es-text hidden">Para cuando una compañía sale a bolsa, los inversionistas tempranos frecuentemente han visto:</span></p>
-                    <div class="stat">10-100x</div>
-                    <p><span class="en-text">returns on their initial investment</span><span class="es-text hidden">retornos sobre su inversión inicial</span></p>
-                    <p style="margin-top: 20px; font-size: 14px; opacity: 0.9;"><span class="en-text">Public market investors miss this wealth creation phase entirely</span><span class="es-text hidden">Los inversionistas del mercado público pierden esta fase de creación de riqueza por completo</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="how-it-works">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">How It Works</span><span class="es-text hidden">Cómo Funciona</span></h2>
-            <p class="section-subtitle"><span class="en-text">A transparent, deal-by-deal approach to pre-IPO investing</span><span class="es-text hidden">Un enfoque transparente, inversión por inversión, para invertir pre-IPO</span></p>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3><span class="en-text">Deal Sourcing</span><span class="es-text hidden">Búsqueda de Oportunidades</span></h3>
-                    <p><span class="en-text">We source late-stage technology company shares through multiple channels, including direct allocations and established secondary market platforms, focusing on companies actively preparing for IPO within 1-2 years</span><span class="es-text hidden">Obtenemos acciones de compañías tecnológicas de etapa avanzada a través de múltiples canales, incluyendo asignaciones directas y plataformas establecidas de mercado secundario, enfocándonos en compañías preparándose activamente para IPO en 1-2 años</span></p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3><span class="en-text">SPV Creation</span><span class="es-text hidden">Creación de SPV</span></h3>
-                    <p><span class="en-text">Each opportunity is structured as a dedicated Special Purpose Vehicle holding a single investment</span><span class="es-text hidden">Cada oportunidad se estructura como un Vehículo de Propósito Especial dedicado que mantiene una sola inversión</span></p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3><span class="en-text">Full Disclosure</span><span class="es-text hidden">Divulgación Completa</span></h3>
-                    <p><span class="en-text">Review complete documentation including fees, risks, and liquidity mechanics before investing</span><span class="es-text hidden">Revise documentación completa incluyendo tarifas, riesgos y mecánicas de liquidez antes de invertir</span></p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3><span class="en-text">Investment & Exit</span><span class="es-text hidden">Inversión y Salida</span></h3>
-                    <p><span class="en-text">Participate in the SPV and receive returns when the company goes public or is acquired</span><span class="es-text hidden">Participe en el SPV y reciba retornos cuando la compañía salga a bolsa o sea adquirida</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="process">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">What to Expect</span><span class="es-text hidden">Qué Esperar</span></h2>
-            <p class="section-subtitle"><span class="en-text">Your journey from initial inquiry to investment</span><span class="es-text hidden">Su camino desde la consulta inicial hasta la inversión</span></p>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="process-step-number">1</div>
-                    <div class="process-step-content">
-                        <h4><span class="en-text">Initial Contact & Qualification</span><span class="es-text hidden">Contacto Inicial y Calificación</span></h4>
-                        <p><span class="en-text">Submit your information and we'll schedule a confidential consultation to understand your investment objectives and confirm accredited investor status.</span><span class="es-text hidden">Envíe su información y programaremos una consulta confidencial para entender sus objetivos de inversión y confirmar su estatus de inversionista acreditado.</span></p>
+            <section class="opportunities-available">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Current Opportunities</span><span class="es-text hidden">Oportunidades Actuales</span></h2>
+                    <p class="section-subtitle"><span class="en-text">View availability status for our curated pre-IPO opportunities</span><span class="es-text hidden">Vea el estado de disponibilidad de nuestras oportunidades pre-IPO seleccionadas</span></p>
+                    <div class="opportunities-grid">
+                        <div class="opportunity-status-card soldout">
+                            <h3><a href="https://www.spacex.com" target="_blank" rel="noopener noreferrer">SpaceX</a></h3>
+                            <p><span class="en-text">Private space exploration and satellite company</span><span class="es-text hidden">Compañía privada de exploración espacial y satélites</span></p>
+                            <div class="status-badge soldout"><span class="en-text">Sold Out</span><span class="es-text hidden">Agotado</span></div>
+                        </div>
+                        <div class="opportunity-status-card waitlist">
+                            <h3><a href="https://stripe.com" target="_blank" rel="noopener noreferrer">Stripe</a></h3>
+                            <p><span class="en-text">Financial infrastructure and payments platform</span><span class="es-text hidden">Infraestructura financiera y plataforma de pagos</span></p>
+                            <a href="stripe-waitlist.html" class="status-badge waitlist"><span class="en-text">Join Waitlist</span><span class="es-text hidden">Unirse a Lista</span></a>
+                        </div>
+                        <div class="opportunity-status-card waitlist">
+                            <h3><a href="https://www.anduril.com" target="_blank" rel="noopener noreferrer">Anduril</a></h3>
+                            <p><span class="en-text">Defense technology and autonomous systems</span><span class="es-text hidden">Tecnología de defensa y sistemas autónomos</span></p>
+                            <a href="anduril-waitlist.html" class="status-badge waitlist"><span class="en-text">Join Waitlist</span><span class="es-text hidden">Unirse a Lista</span></a>
+                        </div>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="process-step-number">2</div>
-                    <div class="process-step-content">
-                        <h4><span class="en-text">Opportunity Review (7-14 days)</span><span class="es-text hidden">Revisión de Oportunidad (7-14 días)</span></h4>
-                        <p><span class="en-text">When a deal becomes available, you'll receive complete documentation including company information, valuation details, fee structure, and risk factors for your review.</span><span class="es-text hidden">Cuando una oportunidad esté disponible, recibirá documentación completa incluyendo información de la compañía, detalles de valoración, estructura de tarifas y factores de riesgo para su revisión.</span></p>
+            </section>
+
+            <section class="selection-criteria">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Our Selection Process</span><span class="es-text hidden">Nuestro Proceso de Selección</span></h2>
+                    <p class="section-subtitle"><span class="en-text">We focus exclusively on companies actively preparing for liquidity events</span><span class="es-text hidden">Nos enfocamos exclusivamente en compañías que se preparan activamente para eventos de liquidez</span></p>
+                    <div class="criteria-box">
+                        <h3><span class="en-text">Companies in Active IPO Preparation</span><span class="es-text hidden">Compañías en Preparación Activa para IPO</span></h3>
+                        <p><span class="en-text">We carefully select late-stage technology companies that are actively in the process of preparing for an IPO or acquisition within a defined timeframe.</span><span class="es-text hidden">Seleccionamos cuidadosamente compañías tecnológicas de etapa avanzada que están activamente en el proceso de preparación para un IPO o adquisición dentro de un marco de tiempo definido.</span></p>
+                        <div class="timeline-highlight"><span class="en-text">1-2 Year Horizon</span><span class="es-text hidden">Horizonte de 1-2 Años</span></div>
+                        <p><span class="en-text">This focused approach means you're investing in companies with clear, near-term paths to liquidity—not speculative early-stage ventures. Every opportunity we present has credible momentum toward a public listing or strategic acquisition.</span><span class="es-text hidden">Este enfoque concentrado significa que está invirtiendo en compañías con caminos claros y cercanos hacia liquidez—no empresas especulativas de etapa temprana. Cada oportunidad que presentamos tiene impulso creíble hacia una cotización pública o adquisición estratégica.</span></p>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="process-step-number">3</div>
-                    <div class="process-step-content">
-                        <h4><span class="en-text">Investment & Documentation</span><span class="es-text hidden">Inversión y Documentación</span></h4>
-                        <p><span class="en-text">Sign SPV subscription documents and transfer funds. You'll receive confirmation and ongoing updates.</span><span class="es-text hidden">Firme documentos de suscripción SPV y transfiera fondos. Recibirá confirmación y actualizaciones continuas.</span></p>
+            </section>
+
+            <section class="opportunity">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Why Pre-IPO Tech Investments?</span><span class="es-text hidden">¿Por Qué Inversiones Pre-IPO en Tecnología?</span></h2>
+                    <p class="section-subtitle"><span class="en-text">The most significant wealth creation in technology happens before companies go public</span><span class="es-text hidden">La creación de riqueza más significativa en tecnología ocurre antes de que las compañías salgan a bolsa</span></p>
+                    <div class="opportunity-grid">
+                        <div class="opportunity-card">
+                            <div class="icon">📈</div>
+                            <h3><span class="en-text">Explosive Growth Potential</span><span class="es-text hidden">Potencial de Crecimiento Explosivo</span></h3>
+                            <p><span class="en-text">Late-stage private companies often experience 2-5x returns before and after IPO. By the time companies go public, much of the value creation has already occurred.</span><span class="es-text hidden">Las compañías privadas de etapa avanzada frecuentemente experimentan retornos de 2-5x antes y después del IPO. Para cuando las compañías salen a bolsa, gran parte de la creación de valor ya ha ocurrido.</span></p>
+                        </div>
+                        <div class="opportunity-card">
+                            <div class="icon">🎯</div>
+                            <h3><span class="en-text">Portfolio Diversification</span><span class="es-text hidden">Diversificación de Portafolio</span></h3>
+                            <p><span class="en-text">Access a new asset class that's uncorrelated with traditional markets. Pre-IPO investments provide exposure to innovation and high-growth sectors.</span><span class="es-text hidden">Acceda a una nueva clase de activo no correlacionada con mercados tradicionales. Las inversiones pre-IPO proporcionan exposición a innovación y sectores de alto crecimiento.</span></p>
+                        </div>
+                        <div class="opportunity-card">
+                            <div class="icon">⏰</div>
+                            <h3><span class="en-text">First-Mover Advantage</span><span class="es-text hidden">Ventaja del Primer Movimiento</span></h3>
+                            <p><span class="en-text">Invest before the public market hype. Get in at valuations that reflect private market dynamics, not public market speculation.</span><span class="es-text hidden">Invierta antes del hype del mercado público. Entre a valoraciones que reflejan dinámicas del mercado privado, no especulación del mercado público.</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="process-step-number">4</div>
-                    <div class="process-step-content">
-                        <h4><span class="en-text">Updates & Exit</span><span class="es-text hidden">Actualizaciones y Salida</span></h4>
-                        <p><span class="en-text">Receive quarterly updates throughout the hold period. Upon IPO or acquisition, proceeds are distributed after applicable fees and lock-up periods.</span><span class="es-text hidden">Reciba actualizaciones trimestrales durante el período de tenencia. Al IPO o adquisición, los ingresos se distribuyen después de tarifas aplicables y períodos de bloqueo.</span></p>
+            </section>
+
+            <section class="exclusivity">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Exclusive Access to Private Markets</span><span class="es-text hidden">Acceso Exclusivo a Mercados Privados</span></h2>
+                    <p class="section-subtitle"><span class="en-text">Gain access to investment opportunities typically reserved for institutional investors and Silicon Valley insiders</span><span class="es-text hidden">Obtenga acceso a oportunidades de inversión típicamente reservadas para inversionistas institucionales e insiders de Silicon Valley</span></p>
+                    <div class="exclusivity-content">
+                        <div class="exclusivity-text">
+                            <h3><span class="en-text">Breaking Down Barriers</span><span class="es-text hidden">Rompiendo Barreras</span></h3>
+                            <p><span class="en-text">Historically, pre-IPO investments were exclusively available to:</span><span class="es-text hidden">Históricamente, las inversiones pre-IPO estaban disponibles exclusivamente para:</span></p>
+                            <ul>
+                                <li><span class="en-text">Silicon Valley venture capital firms</span><span class="es-text hidden">Firmas de capital de riesgo de Silicon Valley</span></li>
+                                <li><span class="en-text">Ultra-high-net-worth individuals with insider connections</span><span class="es-text hidden">Individuos de patrimonio ultra alto con conexiones internas</span></li>
+                                <li><span class="en-text">Institutional investors with Silicon Valley networks</span><span class="es-text hidden">Inversionistas institucionales con redes en Silicon Valley</span></li>
+                                <li><span class="en-text">Company insiders and early employees</span><span class="es-text hidden">Insiders de la compañía y empleados tempranos</span></li>
+                            </ul>
+                            <p style="margin-top: 30px; font-size: 18px; font-weight: 600;"><span class="en-text">Silicon Corridor Ventures changes this. We provide structured, transparent access to these exclusive opportunities for accredited investors worldwide.</span><span class="es-text hidden">Silicon Corridor Ventures cambia esto. Proporcionamos acceso estructurado y transparente a estas oportunidades exclusivas para inversionistas acreditados en todo el mundo.</span></p>
+                        </div>
+                        <div class="exclusivity-box">
+                            <h4><span class="en-text">Why This Matters</span><span class="es-text hidden">Por Qué Esto Importa</span></h4>
+                            <p><span class="en-text">By the time a company IPOs, early investors have often seen:</span><span class="es-text hidden">Para cuando una compañía sale a bolsa, los inversionistas tempranos frecuentemente han visto:</span></p>
+                            <div class="stat">10-100x</div>
+                            <p><span class="en-text">returns on their initial investment</span><span class="es-text hidden">retornos sobre su inversión inicial</span></p>
+                            <p style="margin-top: 20px; font-size: 14px; opacity: 0.9;"><span class="en-text">Public market investors miss this wealth creation phase entirely</span><span class="es-text hidden">Los inversionistas del mercado público pierden esta fase de creación de riqueza por completo</span></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="structure">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Our Structure</span><span class="es-text hidden">Nuestra Estructura</span></h2>
-            <p class="section-subtitle"><span class="en-text">Clear, transparent, and designed to align interests</span><span class="es-text hidden">Clara, transparente y diseñada para alinear intereses</span></p>
-            <div class="structure-grid">
-                <div class="structure-card">
-                    <h3><span class="en-text">What We Are</span><span class="es-text hidden">Lo Que Somos</span></h3>
-                    <ul>
-                        <li><span class="en-text">Deal-by-deal SPV platform</span><span class="es-text hidden">Plataforma de SPV inversión por inversión</span></li>
-                        <li><span class="en-text">One investment per vehicle</span><span class="es-text hidden">Una inversión por vehículo</span></li>
-                        <li><span class="en-text">Focused on late-stage tech companies</span><span class="es-text hidden">Enfocados en compañías tech de etapa avanzada</span></li>
-                        <li><span class="en-text">Clear liquidity mechanics (IPO/acquisition)</span><span class="es-text hidden">Mecánicas de liquidez claras (IPO/adquisición)</span></li>
-                        <li><span class="en-text">Full fee and risk disclosure</span><span class="es-text hidden">Divulgación completa de tarifas y riesgos</span></li>
-                    </ul>
-                </div>
-                <div class="structure-card">
-                    <h3><span class="en-text">What We Are Not</span><span class="es-text hidden">Lo Que No Somos</span></h3>
-                    <ul>
-                        <li><span class="en-text">Not a blind-pool fund</span><span class="es-text hidden">No somos un fondo ciego</span></li>
-                        <li><span class="en-text">Not an investment advisor</span><span class="es-text hidden">No somos un asesor de inversiones</span></li>
-                        <li><span class="en-text">Not making performance guarantees</span><span class="es-text hidden">No hacemos garantías de rendimiento</span></li>
-                        <li><span class="en-text">Not guaranteeing valuations or share prices</span><span class="es-text hidden">No garantizamos valoraciones o precios de acciones</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="fee-example">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Fee Transparency</span><span class="es-text hidden">Transparencia de Tarifas</span></h2>
-            <p class="section-subtitle"><span class="en-text">We believe in complete transparency. Here's exactly how fees work.</span><span class="es-text hidden">Creemos en transparencia completa. Aquí está exactamente cómo funcionan las tarifas.</span></p>
-            <div class="fee-box">
-                <h3><span class="en-text">Illustrative Example: $200,000 Investment with 2.0× Exit</span><span class="es-text hidden">Ejemplo Ilustrativo: Inversión de $200,000 con Salida de 2.0×</span></h3>
-                <div class="fee-calculation">
-                    <div class="fee-row"><span><span class="en-text">Initial Investment</span><span class="es-text hidden">Inversión Inicial</span></span><span>$200,000</span></div>
-                    <div class="fee-row"><span><span class="en-text">Upfront Administration Fee (2.5%-3%)*</span><span class="es-text hidden">Tarifa de Administración Inicial (2.5%-3%)*</span></span><span>-$5,500</span></div>
-                    <div class="fee-row"><span><span class="en-text">Net Investment</span><span class="es-text hidden">Inversión Neta</span></span><span>$194,500</span></div>
-                    <div class="fee-row"><span><span class="en-text">Gross Exit Value (2.0×)</span><span class="es-text hidden">Valor de Salida Bruto (2.0×)</span></span><span>$389,000</span></div>
-                    <div class="fee-row"><span><span class="en-text">Gross Profit</span><span class="es-text hidden">Ganancia Bruta</span></span><span>$194,500</span></div>
-                    <div class="fee-row"><span><span class="en-text">Underlying Carry (19%-22%)*</span><span class="es-text hidden">Carry Subyacente (19%-22%)*</span></span><span>-$37,955</span></div>
-                    <div class="fee-row"><span><span class="en-text">SPV Carry (10% of net)</span><span class="es-text hidden">Carry SPV (10% neto)</span></span><span>-$15,655</span></div>
-                    <div class="fee-row"><span><span class="en-text">Net Return to Investor</span><span class="es-text hidden">Retorno Neto al Inversionista</span></span><span>$335,890</span></div>
-                </div>
-                <div class="positive-roi">
-                    <div class="fee-row"><span style="font-weight: 700;"><span class="en-text">Your Net ROI</span><span class="es-text hidden">Su ROI Neto</span></span><span class="roi-value">+67.9%</span></div>
-                </div>
-                <p class="fee-note"><span class="en-text">* These fees may vary and are deal-specific. All fees will be disclosed in full detail for each investment opportunity.</span><span class="es-text hidden">* Estas tarifas pueden variar y son específicas de cada inversión. Todas las tarifas se divulgarán en detalle completo para cada oportunidad de inversión.</span></p>
-                <p style="margin-top: 20px; font-size: 14px; opacity: 0.9; text-align: center;"><span class="en-text">All fees are disclosed upfront for each deal. Past performance does not guarantee future results.</span><span class="es-text hidden">Todas las tarifas se divulgan por adelantado para cada inversión. El rendimiento pasado no garantiza resultados futuros.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title"><span class="en-text">Frequently Asked Questions</span><span class="es-text hidden">Preguntas Frecuentes</span></h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3><span class="en-text">What is the minimum investment?</span><span class="es-text hidden">¿Cuál es la inversión mínima?</span></h3>
-                    <p><span class="en-text">Minimum investment is $25,000 per SPV.</span><span class="es-text hidden">La inversión mínima es $25,000 por SPV.</span></p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="en-text">Can I exit before the IPO?</span><span class="es-text hidden">¿Puedo salir antes del IPO?</span></h3>
-                    <p><span class="en-text">No. These investments are illiquid until the company goes public or is acquired. There is no secondary market for SPV interests.</span><span class="es-text hidden">No. Estas inversiones son ilíquidas hasta que la compañía salga a bolsa o sea adquirida. No hay mercado secundario para intereses de SPV.</span></p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="en-text">How do I receive my returns?</span><span class="es-text hidden">¿Cómo recibo mis retornos?</span></h3>
-                    <p><span class="en-text">Upon IPO or acquisition, the SPV will distribute proceeds to investors after applicable fees and any lock-up periods expire.</span><span class="es-text hidden">Al IPO o adquisición, el SPV distribuirá los ingresos a inversionistas después de tarifas aplicables y que expiren los períodos de bloqueo.</span></p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="en-text">How long until I see returns?</span><span class="es-text hidden">¿Cuánto tiempo hasta ver retornos?</span></h3>
-                    <p><span class="en-text">Typically 12-24 months from investment to liquidity event, but timing is uncertain and may be significantly longer. Post-IPO lock-up periods (typically 6 months) also apply.</span><span class="es-text hidden">Típicamente 12-24 meses desde inversión hasta evento de liquidez, pero el tiempo es incierto y puede ser significativamente más largo. También aplican períodos de bloqueo post-IPO (típicamente 6 meses).</span></p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="en-text">Who can invest?</span><span class="es-text hidden">¿Quién puede invertir?</span></h3>
-                    <p><span class="en-text">Accredited investors meeting qualification standards in their jurisdiction.</span><span class="es-text hidden">Inversionistas acreditados que cumplan estándares de calificación en su jurisdicción.</span></p>
-                    <div class="us-note">
-                        <span class="en-text"><strong>U.S. Investors:</strong> U.S. persons may participate through a separate SPV structure. <a href="contact-form-ready.html" style="color: #92400e; text-decoration: underline;">Contact us for more information</a>.</span>
-                        <span class="es-text hidden"><strong>Inversionistas de EE.UU.:</strong> Las personas de EE.UU. pueden participar a través de una estructura SPV separada. <a href="contact-form-ready.html" style="color: #92400e; text-decoration: underline;">Contáctenos para más información</a>.</span>
+            <section class="how-it-works">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">How It Works</span><span class="es-text hidden">Cómo Funciona</span></h2>
+                    <p class="section-subtitle"><span class="en-text">A transparent, deal-by-deal approach to pre-IPO investing</span><span class="es-text hidden">Un enfoque transparente, inversión por inversión, para invertir pre-IPO</span></p>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3><span class="en-text">Deal Sourcing</span><span class="es-text hidden">Búsqueda de Oportunidades</span></h3>
+                            <p><span class="en-text">We source late-stage technology company shares through multiple channels, including direct allocations and established secondary market platforms, focusing on companies actively preparing for IPO within 1-2 years</span><span class="es-text hidden">Obtenemos acciones de compañías tecnológicas de etapa avanzada a través de múltiples canales, incluyendo asignaciones directas y plataformas establecidas de mercado secundario, enfocándonos en compañías preparándose activamente para IPO en 1-2 años</span></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3><span class="en-text">SPV Creation</span><span class="es-text hidden">Creación de SPV</span></h3>
+                            <p><span class="en-text">Each opportunity is structured as a dedicated Special Purpose Vehicle holding a single investment</span><span class="es-text hidden">Cada oportunidad se estructura como un Vehículo de Propósito Especial dedicado que mantiene una sola inversión</span></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3><span class="en-text">Full Disclosure</span><span class="es-text hidden">Divulgación Completa</span></h3>
+                            <p><span class="en-text">Review complete documentation including fees, risks, and liquidity mechanics before investing</span><span class="es-text hidden">Revise documentación completa incluyendo tarifas, riesgos y mecánicas de liquidez antes de invertir</span></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3><span class="en-text">Investment & Exit</span><span class="es-text hidden">Inversión y Salida</span></h3>
+                            <p><span class="en-text">Participate in the SPV and receive returns when the company goes public or is acquired</span><span class="es-text hidden">Participe en el SPV y reciba retornos cuando la compañía salga a bolsa o sea adquirida</span></p>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <h3><span class="en-text">What documentation will I receive?</span><span class="es-text hidden">¿Qué documentación recibiré?</span></h3>
-                    <p><span class="en-text">Complete SPV subscription documents, fee disclosures, risk factors, company information, and quarterly updates throughout the hold period.</span><span class="es-text hidden">Documentos completos de suscripción SPV, divulgaciones de tarifas, factores de riesgo, información de compañía y actualizaciones trimestrales durante el período de tenencia.</span></p>
+            </section>
+
+            <section class="process">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">What to Expect</span><span class="es-text hidden">Qué Esperar</span></h2>
+                    <p class="section-subtitle"><span class="en-text">Your journey from initial inquiry to investment</span><span class="es-text hidden">Su camino desde la consulta inicial hasta la inversión</span></p>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="process-step-number">1</div>
+                            <div class="process-step-content">
+                                <h4><span class="en-text">Initial Contact & Qualification</span><span class="es-text hidden">Contacto Inicial y Calificación</span></h4>
+                                <p><span class="en-text">Submit your information and we'll schedule a confidential consultation to understand your investment objectives and confirm accredited investor status.</span><span class="es-text hidden">Envíe su información y programaremos una consulta confidencial para entender sus objetivos de inversión y confirmar su estatus de inversionista acreditado.</span></p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="process-step-number">2</div>
+                            <div class="process-step-content">
+                                <h4><span class="en-text">Opportunity Review (7-14 days)</span><span class="es-text hidden">Revisión de Oportunidad (7-14 días)</span></h4>
+                                <p><span class="en-text">When a deal becomes available, you'll receive complete documentation including company information, valuation details, fee structure, and risk factors for your review.</span><span class="es-text hidden">Cuando una oportunidad esté disponible, recibirá documentación completa incluyendo información de la compañía, detalles de valoración, estructura de tarifas y factores de riesgo para su revisión.</span></p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="process-step-number">3</div>
+                            <div class="process-step-content">
+                                <h4><span class="en-text">Investment & Documentation</span><span class="es-text hidden">Inversión y Documentación</span></h4>
+                                <p><span class="en-text">Sign SPV subscription documents and transfer funds. You'll receive confirmation and ongoing updates.</span><span class="es-text hidden">Firme documentos de suscripción SPV y transfiera fondos. Recibirá confirmación y actualizaciones continuas.</span></p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="process-step-number">4</div>
+                            <div class="process-step-content">
+                                <h4><span class="en-text">Updates & Exit</span><span class="es-text hidden">Actualizaciones y Salida</span></h4>
+                                <p><span class="en-text">Receive quarterly updates throughout the hold period. Upon IPO or acquisition, proceeds are distributed after applicable fees and lock-up periods.</span><span class="es-text hidden">Reciba actualizaciones trimestrales durante el período de tenencia. Al IPO o adquisición, los ingresos se distribuyen después de tarifas aplicables y períodos de bloqueo.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="structure">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Our Structure</span><span class="es-text hidden">Nuestra Estructura</span></h2>
+                    <p class="section-subtitle"><span class="en-text">Clear, transparent, and designed to align interests</span><span class="es-text hidden">Clara, transparente y diseñada para alinear intereses</span></p>
+                    <div class="structure-grid">
+                        <div class="structure-card">
+                            <h3><span class="en-text">What We Are</span><span class="es-text hidden">Lo Que Somos</span></h3>
+                            <ul>
+                                <li><span class="en-text">Deal-by-deal SPV platform</span><span class="es-text hidden">Plataforma de SPV inversión por inversión</span></li>
+                                <li><span class="en-text">One investment per vehicle</span><span class="es-text hidden">Una inversión por vehículo</span></li>
+                                <li><span class="en-text">Focused on late-stage tech companies</span><span class="es-text hidden">Enfocados en compañías tech de etapa avanzada</span></li>
+                                <li><span class="en-text">Clear liquidity mechanics (IPO/acquisition)</span><span class="es-text hidden">Mecánicas de liquidez claras (IPO/adquisición)</span></li>
+                                <li><span class="en-text">Full fee and risk disclosure</span><span class="es-text hidden">Divulgación completa de tarifas y riesgos</span></li>
+                            </ul>
+                        </div>
+                        <div class="structure-card">
+                            <h3><span class="en-text">What We Are Not</span><span class="es-text hidden">Lo Que No Somos</span></h3>
+                            <ul>
+                                <li><span class="en-text">Not a blind-pool fund</span><span class="es-text hidden">No somos un fondo ciego</span></li>
+                                <li><span class="en-text">Not an investment advisor</span><span class="es-text hidden">No somos un asesor de inversiones</span></li>
+                                <li><span class="en-text">Not making performance guarantees</span><span class="es-text hidden">No hacemos garantías de rendimiento</span></li>
+                                <li><span class="en-text">Not guaranteeing valuations or share prices</span><span class="es-text hidden">No garantizamos valoraciones o precios de acciones</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fee-example">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Fee Transparency</span><span class="es-text hidden">Transparencia de Tarifas</span></h2>
+                    <p class="section-subtitle"><span class="en-text">We believe in complete transparency. Here's exactly how fees work.</span><span class="es-text hidden">Creemos en transparencia completa. Aquí está exactamente cómo funcionan las tarifas.</span></p>
+                    <div class="fee-box">
+                        <h3><span class="en-text">Illustrative Example: $200,000 Investment with 2.0× Exit</span><span class="es-text hidden">Ejemplo Ilustrativo: Inversión de $200,000 con Salida de 2.0×</span></h3>
+                        <div class="fee-calculation">
+                            <div class="fee-row"><span><span class="en-text">Initial Investment</span><span class="es-text hidden">Inversión Inicial</span></span><span>$200,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Upfront Administration Fee (2.5%-3%)*</span><span class="es-text hidden">Tarifa de Administración Inicial (2.5%-3%)*</span></span><span>-$5,500</span></div>
+                            <div class="fee-row"><span><span class="en-text">Net Investment</span><span class="es-text hidden">Inversión Neta</span></span><span>$194,500</span></div>
+                            <div class="fee-row"><span><span class="en-text">Gross Exit Value (2.0×)</span><span class="es-text hidden">Valor de Salida Bruto (2.0×)</span></span><span>$389,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Gross Profit</span><span class="es-text hidden">Ganancia Bruta</span></span><span>$194,500</span></div>
+                            <div class="fee-row"><span><span class="en-text">Underlying Carry (19%-22%)*</span><span class="es-text hidden">Carry Subyacente (19%-22%)*</span></span><span>-$37,955</span></div>
+                            <div class="fee-row"><span><span class="en-text">SPV Carry (10% of net)</span><span class="es-text hidden">Carry SPV (10% neto)</span></span><span>-$15,655</span></div>
+                            <div class="fee-row"><span><span class="en-text">Net Return to Investor</span><span class="es-text hidden">Retorno Neto al Inversionista</span></span><span>$335,890</span></div>
+                        </div>
+                        <div class="positive-roi">
+                            <div class="fee-row"><span style="font-weight: 700;"><span class="en-text">Your Net ROI</span><span class="es-text hidden">Su ROI Neto</span></span><span class="roi-value">+67.9%</span></div>
+                        </div>
+                        <p class="fee-note"><span class="en-text">* These fees may vary and are deal-specific. All fees will be disclosed in full detail for each investment opportunity.</span><span class="es-text hidden">* Estas tarifas pueden variar y son específicas de cada inversión. Todas las tarifas se divulgarán en detalle completo para cada oportunidad de inversión.</span></p>
+                        <p style="margin-top: 20px; font-size: 14px; opacity: 0.9; text-align: center;"><span class="en-text">All fees are disclosed upfront for each deal. Past performance does not guarantee future results.</span><span class="es-text hidden">Todas las tarifas se divulgan por adelantado para cada inversión. El rendimiento pasado no garantiza resultados futuros.</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <h2 class="section-title"><span class="en-text">Frequently Asked Questions</span><span class="es-text hidden">Preguntas Frecuentes</span></h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3><span class="en-text">What is the minimum investment?</span><span class="es-text hidden">¿Cuál es la inversión mínima?</span></h3>
+                            <p><span class="en-text">Minimum investment is $25,000 per SPV.</span><span class="es-text hidden">La inversión mínima es $25,000 por SPV.</span></p>
+                        </div>
+                        <div class="faq-item">
+                            <h3><span class="en-text">Can I exit before the IPO?</span><span class="es-text hidden">¿Puedo salir antes del IPO?</span></h3>
+                            <p><span class="en-text">No. These investments are illiquid until the company goes public or is acquired. There is no secondary market for SPV interests.</span><span class="es-text hidden">No. Estas inversiones son ilíquidas hasta que la compañía salga a bolsa o sea adquirida. No hay mercado secundario para intereses de SPV.</span></p>
+                        </div>
+                        <div class="faq-item">
+                            <h3><span class="en-text">How do I receive my returns?</span><span class="es-text hidden">¿Cómo recibo mis retornos?</span></h3>
+                            <p><span class="en-text">Upon IPO or acquisition, the SPV will distribute proceeds to investors after applicable fees and any lock-up periods expire.</span><span class="es-text hidden">Al IPO o adquisición, el SPV distribuirá los ingresos a inversionistas después de tarifas aplicables y que expiren los períodos de bloqueo.</span></p>
+                        </div>
+                        <div class="faq-item">
+                            <h3><span class="en-text">How long until I see returns?</span><span class="es-text hidden">¿Cuánto tiempo hasta ver retornos?</span></h3>
+                            <p><span class="en-text">Typically 12-24 months from investment to liquidity event, but timing is uncertain and may be significantly longer. Post-IPO lock-up periods (typically 6 months) also apply.</span><span class="es-text hidden">Típicamente 12-24 meses desde inversión hasta evento de liquidez, pero el tiempo es incierto y puede ser significativamente más largo. También aplican períodos de bloqueo post-IPO (típicamente 6 meses).</span></p>
+                        </div>
+                        <div class="faq-item">
+                            <h3><span class="en-text">Who can invest?</span><span class="es-text hidden">¿Quién puede invertir?</span></h3>
+                            <p><span class="en-text">Accredited investors meeting qualification standards in their jurisdiction.</span><span class="es-text hidden">Inversionistas acreditados que cumplan estándares de calificación en su jurisdicción.</span></p>
+                            <div class="us-note">
+                                <span class="en-text"><strong>U.S. Investors:</strong> U.S. persons may participate through a separate SPV structure. <a href="contact-form-ready.html" style="color: #92400e; text-decoration: underline;">Contact us for more information</a>.</span>
+                                <span class="es-text hidden"><strong>Inversionistas de EE.UU.:</strong> Las personas de EE.UU. pueden participar a través de una estructura SPV separada. <a href="contact-form-ready.html" style="color: #92400e; text-decoration: underline;">Contáctenos para más información</a>.</span>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h3><span class="en-text">What documentation will I receive?</span><span class="es-text hidden">¿Qué documentación recibiré?</span></h3>
+                            <p><span class="en-text">Complete SPV subscription documents, fee disclosures, risk factors, company information, and quarterly updates throughout the hold period.</span><span class="es-text hidden">Documentos completos de suscripción SPV, divulgaciones de tarifas, factores de riesgo, información de compañía y actualizaciones trimestrales durante el período de tenencia.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <section class="final-cta" id="contact">
+            <div class="container">
+                <h2><span class="en-text">Don't Miss the Next Wave of Innovation</span><span class="es-text hidden">No Se Pierda la Próxima Ola de Innovación</span></h2>
+                <p><span class="en-text">Join accredited investors gaining exclusive access to Silicon Valley's most promising companies</span><span class="es-text hidden">Únase a inversionistas acreditados obteniendo acceso exclusivo a las compañías más prometedoras de Silicon Valley</span></p>
+                <a href="contact-form-ready.html" class="cta-button"><span class="en-text">Request Information</span><span class="es-text hidden">Solicitar Información</span></a>
+                <img src="https://firebasestorage.googleapis.com/v0/b/cdo-fuelix-app-pr-5c588b.appspot.com/o/users%2Fuser-AqzE1n8hCrrEpb7sIlfU%2Ffile-0cvMcoRvtzktuIaE0gSt?alt=media&token=2f3586a3-1d4d-4631-9667-b939f3ef541d" alt="Silicon Corridor Ventures" class="cta-logo">
+                <div class="contact-info">
+                    <p>📍 123 Market Street, San Francisco, CA</p>
+                    <p>📞 <a href="tel:+11231110000">123-111-0000</a></p>
+                    <p>✉️ <a href="mailto:invest@siliconcorridorventures.com">invest@siliconcorridorventures.com</a></p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="final-cta" id="contact">
-        <div class="container">
-            <h2><span class="en-text">Don't Miss the Next Wave of Innovation</span><span class="es-text hidden">No Se Pierda la Próxima Ola de Innovación</span></h2>
-            <p><span class="en-text">Join accredited investors gaining exclusive access to Silicon Valley's most promising companies</span><span class="es-text hidden">Únase a inversionistas acreditados obteniendo acceso exclusivo a las compañías más prometedoras de Silicon Valley</span></p>
-            <a href="contact-form-ready.html" class="cta-button"><span class="en-text">Request Information</span><span class="es-text hidden">Solicitar Información</span></a>
-            <img src="https://firebasestorage.googleapis.com/v0/b/cdo-fuelix-app-pr-5c588b.appspot.com/o/users%2Fuser-AqzE1n8hCrrEpb7sIlfU%2Ffile-0cvMcoRvtzktuIaE0gSt?alt=media&token=2f3586a3-1d4d-4631-9667-b939f3ef541d" alt="Silicon Corridor Ventures" class="cta-logo">
-            <div class="contact-info">
-                <p>📍 123 Market Street, San Francisco, CA</p>
-                <p>📞 <a href="tel:+11231110000">123-111-0000</a></p>
-                <p>✉️ <a href="mailto:invest@siliconcorridorventures.com">invest@siliconcorridorventures.com</a></p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
