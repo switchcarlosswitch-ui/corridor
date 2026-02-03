@@ -49,6 +49,13 @@
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); }
         .form-group textarea { min-height: 120px; resize: vertical; }
         
+        .radio-group { margin-bottom: 25px; }
+        .radio-group label.group-label { display: block; font-weight: 600; color: #1a1a2e; margin-bottom: 12px; font-size: 15px; }
+        .radio-option { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; padding: 12px; border: 2px solid #e0e0e0; border-radius: 10px; cursor: pointer; transition: all 0.3s; }
+        .radio-option:hover { border-color: #667eea; background: #f8f9fa; }
+        .radio-option input[type="radio"] { width: 20px; height: 20px; min-width: 20px; margin-top: 2px; cursor: pointer; }
+        .radio-option label { font-size: 14px; color: #333; line-height: 1.5; cursor: pointer; flex: 1; }
+        
         .checkbox-group { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 25px; }
         .checkbox-group input[type="checkbox"] { width: 20px; height: 20px; min-width: 20px; margin-top: 2px; cursor: pointer; }
         .checkbox-group label { font-size: 14px; color: #666; line-height: 1.6; cursor: pointer; }
@@ -77,6 +84,7 @@
             .form-group input, .form-group select, .form-group textarea { font-size: 16px; padding: 12px; }
             .checkbox-group { align-items: flex-start; }
             .checkbox-group label { font-size: 13px; }
+            .radio-option label { font-size: 13px; }
             .submit-button { font-size: 16px; padding: 16px; }
             .back-button { font-size: 13px; padding: 8px 16px; }
             .logo { font-size: 18px; }
@@ -232,12 +240,27 @@
                         </label>
                     </div>
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="acknowledgment" name="acknowledgment" value="yes" required>
-                        <label for="acknowledgment">
-                            <span class="en-text">I acknowledge this is not a U.S. offering (or check if you are a U.S. person interested in the separate U.S. SPV structure) <span class="required">*</span></span>
-                            <span class="es-text hidden">Reconozco que esta no es una oferta de EE.UU. (o marque si es una persona de EE.UU. interesada en la estructura SPV separada para EE.UU.) <span class="required">*</span></span>
+                    <div class="radio-group">
+                        <label class="group-label">
+                            <span class="en-text">Are you a U.S. person? <span class="required">*</span></span>
+                            <span class="es-text hidden">¿Es usted una persona de EE.UU.? <span class="required">*</span></span>
                         </label>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="not_us" name="us_person_status" value="Not a U.S. person" required>
+                            <label for="not_us">
+                                <span class="en-text"><strong>No, I am NOT a U.S. person</strong> - I am interested in the standard offshore SPV structure</span>
+                                <span class="es-text hidden"><strong>No, NO soy una persona de EE.UU.</strong> - Me interesa la estructura SPV offshore estándar</span>
+                            </label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="is_us" name="us_person_status" value="U.S. person - interested in U.S. SPV">
+                            <label for="is_us">
+                                <span class="en-text"><strong>Yes, I AM a U.S. person</strong> - I am interested in the separate U.S. SPV structure</span>
+                                <span class="es-text hidden"><strong>Sí, SOY una persona de EE.UU.</strong> - Me interesa la estructura SPV separada para EE.UU.</span>
+                            </label>
+                        </div>
                     </div>
 
                     <button type="submit" class="submit-button">
