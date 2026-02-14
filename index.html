@@ -66,13 +66,14 @@
         .opportunities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; max-width: 1000px; margin-left: auto; margin-right: auto; }
         .opportunity-status-card { background: #f8f9fa; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center; border: 2px solid #e0e0e0; transition: all 0.3s; }
         .opportunity-status-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-        .opportunity-status-card.soldout { border-color: #dc2626; }
+        .opportunity-status-card.available { border-color: #10b981; }
         .opportunity-status-card.waitlist { border-color: #fbbf24; }
         .opportunity-status-card h3 { font-size: 28px; margin-bottom: 15px; color: #1a1a2e; }
         .opportunity-status-card h3 a { color: #1a1a2e; text-decoration: none; }
         .opportunity-status-card h3 a:hover { color: #667eea; }
         .status-badge { display: inline-block; padding: 10px 24px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-top: 15px; text-decoration: none; transition: all 0.3s; cursor: pointer; }
-        .status-badge.soldout { background: #fee2e2; color: #dc2626; cursor: default; }
+        .status-badge.available { background: #d1fae5; color: #065f46; }
+        .status-badge.available:hover { background: #a7f3d0; transform: translateY(-2px); }
         .status-badge.waitlist { background: #fef3c7; color: #d97706; }
         .status-badge.waitlist:hover { background: #fde68a; transform: translateY(-2px); }
         .selection-criteria { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; }
@@ -201,10 +202,10 @@
                     <h2 class="section-title"><span class="en-text">Current Opportunities</span><span class="es-text hidden">Oportunidades Actuales</span></h2>
                     <p class="section-subtitle"><span class="en-text">View availability status for our curated pre-IPO opportunities</span><span class="es-text hidden">Vea el estado de disponibilidad de nuestras oportunidades pre-IPO seleccionadas</span></p>
                     <div class="opportunities-grid">
-                        <div class="opportunity-status-card soldout">
+                        <div class="opportunity-status-card available">
                             <h3><a href="https://www.spacex.com" target="_blank" rel="noopener noreferrer">SpaceX</a></h3>
                             <p><span class="en-text">Private space exploration and satellite company</span><span class="es-text hidden">Compañía privada de exploración espacial y satélites</span></p>
-                            <div class="status-badge soldout"><span class="en-text">Sold Out</span><span class="es-text hidden">Agotado</span></div>
+                            <a href="contact-form-ready.html" class="status-badge available"><span class="en-text">Available Now - Apply</span><span class="es-text hidden">Disponible Ahora - Aplicar</span></a>
                         </div>
                         <div class="opportunity-status-card waitlist">
                             <h3><a href="https://stripe.com" target="_blank" rel="noopener noreferrer">Stripe</a></h3>
@@ -380,25 +381,26 @@
 
             <section class="fee-example">
                 <div class="container">
-                    <h2 class="section-title"><span class="en-text">Fee Transparency</span><span class="es-text hidden">Transparencia de Tarifas</span></h2>
-                    <p class="section-subtitle"><span class="en-text">We believe in complete transparency. Here's exactly how fees work.</span><span class="es-text hidden">Creemos en transparencia completa. Aquí está exactamente cómo funcionan las tarifas.</span></p>
+                    <h2 class="section-title"><span class="en-text">Fee Transparency - SpaceX Opportunity</span><span class="es-text hidden">Transparencia de Tarifas - Oportunidad SpaceX</span></h2>
+                    <p class="section-subtitle"><span class="en-text">We believe in complete transparency. Here's exactly how fees work for the current SpaceX opportunity.</span><span class="es-text hidden">Creemos en transparencia completa. Aquí está exactamente cómo funcionan las tarifas para la oportunidad actual de SpaceX.</span></p>
                     <div class="fee-box">
-                        <h3><span class="en-text">Illustrative Example: $200,000 Investment with 2.0× Exit</span><span class="es-text hidden">Ejemplo Ilustrativo: Inversión de $200,000 con Salida de 2.0×</span></h3>
+                        <h3><span class="en-text">SpaceX Example: $200,000 Investment with 2.0× Exit</span><span class="es-text hidden">Ejemplo SpaceX: Inversión de $200,000 con Salida de 2.0×</span></h3>
                         <div class="fee-calculation">
                             <div class="fee-row"><span><span class="en-text">Initial Investment</span><span class="es-text hidden">Inversión Inicial</span></span><span>$200,000</span></div>
-                            <div class="fee-row"><span><span class="en-text">Upfront Administration Fee (2.5%-3%)*</span><span class="es-text hidden">Tarifa de Administración Inicial (2.5%-3%)*</span></span><span>-$5,500</span></div>
-                            <div class="fee-row"><span><span class="en-text">Net Investment</span><span class="es-text hidden">Inversión Neta</span></span><span>$194,500</span></div>
-                            <div class="fee-row"><span><span class="en-text">Gross Exit Value (2.0×)</span><span class="es-text hidden">Valor de Salida Bruto (2.0×)</span></span><span>$389,000</span></div>
-                            <div class="fee-row"><span><span class="en-text">Gross Profit</span><span class="es-text hidden">Ganancia Bruta</span></span><span>$194,500</span></div>
-                            <div class="fee-row"><span><span class="en-text">Underlying Carry (19%-22%)*</span><span class="es-text hidden">Carry Subyacente (19%-22%)*</span></span><span>-$37,955</span></div>
-                            <div class="fee-row"><span><span class="en-text">SPV Carry (10% of net)</span><span class="es-text hidden">Carry SPV (10% neto)</span></span><span>-$15,655</span></div>
-                            <div class="fee-row"><span><span class="en-text">Net Return to Investor</span><span class="es-text hidden">Retorno Neto al Inversionista</span></span><span>$335,890</span></div>
+                            <div class="fee-row"><span><span class="en-text">Setup Fee</span><span class="es-text hidden">Tarifa de Configuración</span></span><span>-$1,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Administration Fee (2%)</span><span class="es-text hidden">Tarifa de Administración (2%)</span></span><span>-$4,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Net Investment</span><span class="es-text hidden">Inversión Neta</span></span><span>$195,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Gross Exit Value (2.0×)</span><span class="es-text hidden">Valor de Salida Bruto (2.0×)</span></span><span>$390,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Gross Profit</span><span class="es-text hidden">Ganancia Bruta</span></span><span>$195,000</span></div>
+                            <div class="fee-row"><span><span class="en-text">Underlying Carry (19%)</span><span class="es-text hidden">Carry Subyacente (19%)</span></span><span>-$37,050</span></div>
+                            <div class="fee-row"><span><span class="en-text">SPV Carry (13.5%)</span><span class="es-text hidden">Carry SPV (13.5%)</span></span><span>-$21,323</span></div>
+                            <div class="fee-row"><span><span class="en-text">Net Return to Investor</span><span class="es-text hidden">Retorno Neto al Inversionista</span></span><span>$331,627</span></div>
                         </div>
                         <div class="positive-roi">
-                            <div class="fee-row"><span style="font-weight: 700;"><span class="en-text">Your Net ROI</span><span class="es-text hidden">Su ROI Neto</span></span><span class="roi-value">+67.9%</span></div>
+                            <div class="fee-row"><span style="font-weight: 700;"><span class="en-text">Your Net ROI</span><span class="es-text hidden">Su ROI Neto</span></span><span class="roi-value">+65.8%</span></div>
                         </div>
-                        <p class="fee-note"><span class="en-text">* These fees may vary and are deal-specific. All fees will be disclosed in full detail for each investment opportunity.</span><span class="es-text hidden">* Estas tarifas pueden variar y son específicas de cada inversión. Todas las tarifas se divulgarán en detalle completo para cada oportunidad de inversión.</span></p>
-                        <p style="margin-top: 20px; font-size: 14px; opacity: 0.9; text-align: center;"><span class="en-text">All fees are disclosed upfront for each deal. Past performance does not guarantee future results.</span><span class="es-text hidden">Todas las tarifas se divulgan por adelantado para cada inversión. El rendimiento pasado no garantiza resultados futuros.</span></p>
+                        <p class="fee-note"><span class="en-text">SpaceX-specific fees: $1,000 setup + 2% admin + 19% underlying carry + 13.5% SPV carry. These fees are specific to this opportunity.</span><span class="es-text hidden">Tarifas específicas de SpaceX: $1,000 configuración + 2% admin + 19% carry subyacente + 13.5% carry SPV. Estas tarifas son específicas de esta oportunidad.</span></p>
+                        <p style="margin-top: 20px; font-size: 14px; opacity: 0.9; text-align: center;"><span class="en-text">All fees are disclosed upfront. Past performance does not guarantee future results.</span><span class="es-text hidden">Todas las tarifas se divulgan por adelantado. El rendimiento pasado no garantiza resultados futuros.</span></p>
                     </div>
                 </div>
             </section>
@@ -458,8 +460,8 @@
     <footer>
         <div class="container">
             <div class="disclaimer">
-                <p><span class="en-text"><strong>Important Disclosures:</strong> Silicon Corridor Ventures is not an investment advisor and does not provide investment advice. Each investment opportunity is presented through a dedicated Special Purpose Vehicle (SPV) and involves substantial risk, including the possible loss of your entire investment. Pre-IPO investments are illiquid and may take longer than anticipated to realize returns. There is no guarantee of an IPO or acquisition, and timing is uncertain. All investments are subject to lock-up periods and transfer restrictions. Fees include upfront administration fees (2.5%-3%), underlying vehicle carry (typically 19%-22%), and SPV carry (typically 10%). This website is for informational purposes only and does not constitute an offer to sell or solicitation to buy securities. Investments are only available to eligible investors. Past performance does not guarantee future results. Please consult with your own legal, tax, and financial advisors before making any investment decision.</span>
-                <span class="es-text hidden"><strong>Divulgaciones Importantes:</strong> Silicon Corridor Ventures no es un asesor de inversiones y no proporciona asesoramiento de inversión. Cada oportunidad de inversión se presenta a través de un Vehículo de Propósito Especial (SPV) dedicado e involucra riesgo sustancial, incluyendo la posible pérdida de toda su inversión. Las inversiones pre-IPO son ilíquidas y pueden tomar más tiempo del anticipado para realizar retornos. No hay garantía de un IPO o adquisición, y el tiempo es incierto. Todas las inversiones están sujetas a períodos de bloqueo y restricciones de transferencia. Las tarifas incluyen tarifas de administración iniciales (2.5%-3%), el carry del vehículo subyacente (típicamente 19%-22%), y el carry del SPV (típicamente 10%). Este sitio web es solo para fines informativos y no constituye una oferta de venta o solicitud de compra de valores. Las inversiones solo están disponibles para inversionistas elegibles. El rendimiento pasado no garantiza resultados futuros. Por favor consulte con sus propios asesores legales, fiscales y financieros antes de tomar cualquier decisión de inversión.</span></p>
+                <p><span class="en-text"><strong>Important Disclosures:</strong> Silicon Corridor Ventures is not an investment advisor and does not provide investment advice. Each investment opportunity is presented through a dedicated Special Purpose Vehicle (SPV) and involves substantial risk, including the possible loss of your entire investment. Pre-IPO investments are illiquid and may take longer than anticipated to realize returns. There is no guarantee of an IPO or acquisition, and timing is uncertain. All investments are subject to lock-up periods and transfer restrictions. Fees vary by opportunity. SpaceX fees: $1,000 setup + 2% admin + 19% underlying carry + 13.5% SPV carry. This website is for informational purposes only and does not constitute an offer to sell or solicitation to buy securities. Investments are only available to eligible investors. Past performance does not guarantee future results. Please consult with your own legal, tax, and financial advisors before making any investment decision.</span>
+                <span class="es-text hidden"><strong>Divulgaciones Importantes:</strong> Silicon Corridor Ventures no es un asesor de inversiones y no proporciona asesoramiento de inversión. Cada oportunidad de inversión se presenta a través de un Vehículo de Propósito Especial (SPV) dedicado e involucra riesgo sustancial, incluyendo la posible pérdida de toda su inversión. Las inversiones pre-IPO son ilíquidas y pueden tomar más tiempo del anticipado para realizar retornos. No hay garantía de un IPO o adquisición, y el tiempo es incierto. Todas las inversiones están sujetas a períodos de bloqueo y restricciones de transferencia. Las tarifas varían por oportunidad. Tarifas SpaceX: $1,000 configuración + 2% admin + 19% carry subyacente + 13.5% carry SPV. Este sitio web es solo para fines informativos y no constituye una oferta de venta o solicitud de compra de valores. Las inversiones solo están disponibles para inversionistas elegibles. El rendimiento pasado no garantiza resultados futuros. Por favor consulte con sus propios asesores legales, fiscales y financieros antes de tomar cualquier decisión de inversión.</span></p>
                 <p style="margin-top: 20px;">© 2026 Silicon Corridor Ventures. <span class="en-text">All rights reserved.</span><span class="es-text hidden">Todos los derechos reservados.</span></p>
             </div>
         </div>
